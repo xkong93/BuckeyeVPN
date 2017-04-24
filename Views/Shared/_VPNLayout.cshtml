@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FreeVPN</title>
+
+    <link href="~/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/dh-box-2-sides.css" rel="stylesheet" />
+    <link href="~/assets/css/Features-Clean.css" rel="stylesheet" />
+    <link href="~/assets/css/Footer-Basic.css" rel="stylesheet" />
+    <link href="~/assets/css/Footer-Clean.css" rel="stylesheet" />
+    <link href="~/assets/css/Login-Form-Clean.css" rel="stylesheet" />
+    <link href="~/assets/css/Navigation-with-Button1.css" rel="stylesheet" />
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+    <link href="~/assets/css/styles.css" rel="stylesheet" />
+    <link href="~/assets/css/Team-Clean.css" rel="stylesheet" />
+    <link href="~/assets/fonts/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/assets/fonts/ionicons.min.css" rel="stylesheet" />
+    <link href="~/assets/fonts/material-icons.css" rel="stylesheet" />
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-default navigation-clean-button" style="color:#bb0000;">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link" href="/" style="font-size:24px;margin:-9px;"><i class="material-icons" style="font-size:27px;">settings_ethernet</i>BuckeyeVPN </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active" role="presentation" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;"><a href="javascript:void(0);" ccty="WhyChooseUs" class="topm" style="color:rgb(102,102,102);margin:1px;">Why BuckeyeVPN</a></li>
+                        <li role="presentation"><a href="javascript:void(0);" ccty="tutorial" class="topm" style="color:rgb(102,102,102);">Tutorials </a></li>
+                        <li role="presentation"><a href="javascript:void(0);" ccty="Team" class="topm" style="color:rgb(102,102,102);">About Us</a></li>
+                    </ul>
+                    <p class="navbar-text navbar-right actions">
+                        @if (ViewBag.uid == null || ViewBag.uid == 0)
+                        {
+                            <a class="navbar-link login" href="/User/Login">Log In</a>
+                        }
+                        else
+                        {
+                            <a class="navbar-link login" href="/User/Logout">Log Out</a>
+                        }
+                        <a class="btn btn-default action-button" role="button" href="/User/Reg" style="background-color:#bb0000;">Sign Up</a>
+                        <a class="navbar-link login" href="/Order/OrderList">My Orders</a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    @RenderBody()
+
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">BuckeyeVPN © 2017</p>
+        </footer>
+    </div>
+    <script>
+        $(".topm").click(function () {
+            var md = $(this).attr("ccty");
+            window.location.href = "/#" + md;
+        })
+
+    </script>
+    <script src="~/assets/js/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "OrderList Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>My Orders</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Order Num</th>
+                            <th>Plan</th>
+                            <th>Order Time</th>
+                            <th>Payment Status</th>
+                            <th>Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td>CH000@(item.id)</td>
+                                <td>
+                                    @if (item.buy_type == 1)
+                                    {
+                                        @Html.Raw("Basic");
+                                    }
+                                    else if (item.buy_type == 2)
+                                    {
+                                        @Html.Raw("Standard");
+                                    }
+                                    else if (item.buy_type == 3)
+                                    {
+                                        @Html.Raw("Advanced");
+                                    }
+                                </td>
+                                <td>@item.createtime</td>
+                                <td>paid</td>
+                                <td><a href="/Order/OrderDetail/@(item.id)" class="btn btn-danger">View</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> 

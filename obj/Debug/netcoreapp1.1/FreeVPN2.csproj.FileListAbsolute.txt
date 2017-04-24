@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\bin\Debug\netcoreapp1.1\FreeVPN2.deps.json
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\bin\Debug\netcoreapp1.1\FreeVPN2.runtimeconfig.json
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\bin\Debug\netcoreapp1.1\FreeVPN2.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\bin\Debug\netcoreapp1.1\FreeVPN2.dll
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\obj\Debug\netcoreapp1.1\FreeVPN2.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\bin\Debug\netcoreapp1.1\FreeVPN2.pdb
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\obj\Debug\netcoreapp1.1\FreeVPN2.dll
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\obj\Debug\netcoreapp1.1\FreeVPN2.pdb
+C:\Users\Administrator\Desktop\FreeVPN2\FreeVPN2\FreeVPN2\obj\Debug\netcoreapp1.1\FreeVPN2.csprojResolveAssemblyReference.cache

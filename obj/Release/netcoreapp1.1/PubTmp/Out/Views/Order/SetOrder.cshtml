@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "SetOrder Page";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Our best plans</h2>
+        </div>
+        <div class="col-lg-4">
+            <div class="pricing-box-item">
+                <div class="pricing-heading">
+                    <h3><strong>Basic</strong></h3>
+                </div>
+                <div class="pricing-terms">
+                    <h6>free</h6>
+                </div>
+                <div class="pricing-container">
+                    <ul>
+                        <li><i class="icon-ok"></i> Protocol: Socks5/PPTP/L2TP/IKev2</li>
+                        <li><i class="icon-ok"></i> Support PC, mobile phones, iPad online at the same time</li>
+                        <li><i class="icon-ok"></i> 1Gb Bandwidth</li>
+                    </ul>
+                </div>
+                <div class="pricing-action">
+                    <a buy="1" class="js_buy btn btn-danger"><i class="icon-bolt"></i> Get Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="pricing-box-item">
+                <div class="pricing-heading">
+                    <h3><strong>Standard</strong></h3>
+                </div>
+                <div class="pricing-terms">
+                    <h6>$10/Month</h6>
+                </div>
+                <div class="pricing-container">
+                    <ul>
+                        <li><i class="icon-ok"></i> Protocol: Socks5/PPTP/L2TP/IKev2</li>
+                        <li><i class="icon-ok"></i> Support PC, mobile phones, iPad online at the same time</li>
+                        <li><i class="icon-ok"></i> 5Gb Bandwidth</li>
+                    </ul>
+                </div>
+                <div class="pricing-action">
+                    <a buy="2"  class="btn btn-danger" disabled="true"><i class="icon-bolt"></i>Coming Soon</a>
+                </div> 
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="pricing-box-item activeItem">
+                <div class="pricing-heading">
+                    <h3><strong>Advanced</strong></h3>
+                </div>
+                <div class="pricing-terms">
+                    <h6>$20/Month</h6>
+                </div>
+                <div class="pricing-container">
+                    <ul>
+                        <li><i class="icon-ok"></i> Protocol: Socks5/PPTP/L2TP/IKev2</li>
+                        <li><i class="icon-ok"></i> Support PC, mobile phones, iPad online at the same time</li>
+                        <li><i class="icon-ok"></i> Unlimited Bandwidth</li>
+                    </ul>
+                </div>
+                <div class="pricing-action">
+                    <a buy="3" class="btn btn-danger" disabled="true"><i class="icon-bolt"></i>Coming Soon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<script>
+
+    $(".js_buy").click(function () {
+        var type = $(this).attr("buy");
+ 
+        $.ajax({
+            type: 'POST',
+            url: "/Order/Buy",
+            data: { type: type },
+            //dataType: dataType,
+            success: function (res) {
+                if (res > 0) {
+                    window.location.href = "/Order/OrderSuc/" + res;
+                }
+                else {
+                    alert(res);
+                }
+            }
+        });
+    })
+
+
+</script>

@@ -1,0 +1,36 @@
+#Main {
+  text-align:center;
+  background-size:cover;
+  padding:40px;
+}
+
+#maintext {
+  border-radius:20px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.6);
+  max-width:800px;
+  margin:auto;
+}
+
+.btn.btn-danger.active.btn-lg {
+  font-weight:bold;
+}
+
+.h1, h1 {
+  text-align:center;
+  font-weight:bold;
+}
+
+#apple {
+  text-align:center;
+}
+
+#windows {
+  text-align:center;
+}
+
+#apple_button {
+  text-align:center;
+  display:block;
+}
+

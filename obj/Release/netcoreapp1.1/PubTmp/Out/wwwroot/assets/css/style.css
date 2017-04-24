@@ -1,0 +1,166 @@
+
+ 
+.pricing-title{
+	background:#fff;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+
+.pricing-title h3{
+	font-weight:600;
+	margin-bottom:0;
+}
+
+.pricing-offer{
+	background: #fcfcfc;
+	text-align: center;
+	padding:40px 0 40px 0;
+	font-size:18px;
+	border-top:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+}
+
+.pricing-box.activeItem .pricing-offer{
+	color:#fff;
+}
+
+.pricing-offer strong{
+	font-size:78px;
+	line-height:89px;
+}
+
+.pricing-offer sup{
+	font-size:28px;
+}
+
+.pricing-container{
+	background: #fff;
+	text-align:center;
+	font-size:14px;
+}
+
+.pricing-container strong{
+color:#353535;
+}
+
+.pricing-container ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.pricing-container ul li{
+	border-bottom: 1px solid #F5F5F5;
+	list-style: none;
+	padding: 15px 0 15px 0;
+	margin: 0 0 0 0;
+	color: #222;
+}
+
+.pricing-action{
+	margin:0;
+	background: #fcfcfc;
+	text-align:center;
+	padding:20px 0 30px 0;
+}
+
+.pricing-wrapp{
+	margin:0 auto;
+	width:100%;
+	background:#fd0000;
+}
+ .pricing-box-item {
+	border: 1px solid #e6e6e6;
+	/* background:#fcfcfc; */
+	position:relative;
+	margin:0 0 20px 0;
+	padding:0;
+	-webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+	-moz-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+	box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0;
+	overflow: hidden;
+	}
+
+.pricing-box-item .pricing-heading {
+	background: #fcfcfc;
+	text-align: center;
+	padding:0px 0 0px 0;
+	display:block;
+}
+.pricing-box-item.activeItem .pricing-heading {
+	background: #FFFFFF;
+	text-align: center;
+	padding:0px 0 1px 0;
+	border-bottom:none;
+	display:block;
+}
+
+.pricing-box-item .pricing-heading h3 strong {
+	font-size:28px;
+	font-weight: 600;
+	letter-spacing:-1px;
+	padding: 15px;
+}
+.pricing-box-item .pricing-heading h3 {
+	font-size:32px;
+	font-weight:300;
+	letter-spacing:-1px;
+	background: white;
+	padding: 22px 0 10px;
+}
+
+.pricing-box-item .pricing-terms {
+	text-align: center;
+	background: #fff;
+	display: block;
+	overflow: hidden;
+	padding: 11px 0 5px;
+}
+
+.pricing-box-item .pricing-terms  h6 {
+	font-style:italic;
+	margin-top:10px;
+	color: #bb0000;
+	font-size:17px;
+	font-family:'Noto Serif', serif;
+}
+
+.pricing-box-item .icon .price-circled {
+    margin: 10px 10px 10px 0;
+    display: inline-block !important;
+    text-align: center !important;
+    color: #fff;
+    width: 68px;
+    height: 68px;
+	padding:12px;
+    font-size: 16px;
+	font-weight:700;
+    line-height: 68px;
+    text-shadow:none;
+    cursor: pointer;
+    background-color: #888;
+    border-radius: 64px;
+    -moz-border-radius: 64px;
+    -webkit-border-radius: 64px;
+}
+
+.pricing-box-item  .pricing-action{
+	margin:0;
+	text-align:center;
+	padding:30px 0 30px 0;
+}
+
+.form-group p.order-detail-item{
+	line-height:34px;
+}
+#basic-addon2{
+	border:none;
+}
+ 
+
+
+ 
